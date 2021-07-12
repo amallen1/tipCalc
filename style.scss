@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+//Colors
+
+//primary color
+$strong-cyan: hsl(172, 67%, 45%);
+
+//neutral colors
+
+$very-dark-cyan: hsl(183, 100%, 15%);
+$dark-grayish-cyan1: hsl(186, 14%, 43%);
+$dark-grayish-cyan2: hsl(184, 14%, 56%);
+$body-background: hsl(185, 41%, 84%);
+$input-clr: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $body-background;
+  height: 100vh;
+  font-family: "Space Mono", sans-serif;
+}
+
+// Typgraphy
+label {
+  color: $dark-grayish-cyan1;
+  font-weight: 700;
+}
+
+//Layout
+.logo-section {
+  margin: 3em 0;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  background-color: white;
+  padding: 2em 2em 0 2em;
+  border-radius: 20px 20px 0 0;
+}
+
+input {
+  width: 100%;
+  border: none;
+  background-color: $input-clr;
+  padding: 1em;
+  border-radius: 5px;
+
+  &:focus {
+    padding-left: 1em;
+  }
+}
+
+.bill-input {
+  background-image: url(/images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 5%;
+}
+
+input[type="number"] {
+  text-align: right;
+  font-size: 24px;
+  font-family: "Space Mono", sans-serif;
+  color: $very-dark-cyan;
+  font-weight: 700;
+}
+
+//removes spin button
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
