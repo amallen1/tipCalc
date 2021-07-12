@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
-</head>
-<body>
-  <div class="logo-section">
-    <img src="/images/logo.svg" alt="Splitter Logo">
-  </div>
-  
+    <title>Frontend Mentor | Tip calculator app</title>
 
-  <div class="container">
-
-    <div class="bill-inputs">
-      <label for="bill">Bill</label><br>
-      <input class="bill-input" type="number">
-    
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="logo-section">
+      <img src="/images/logo.svg" alt="Splitter Logo" />
     </div>
-      
-    <div class="percentages">
-      <label for="tip-percent">Select Tip %</label><br>
-      <button class="percent"></button>
-      <button class="percent"></button>
-      <button class="percent"></button>
-      <button class="percent"></button>
-      <button class="percent"></button>
+    <div class="container">
+      <div class="calculator">
+        <div class="bill-inputs">
+          <label for="bill">Bill</label><br />
+          <input class="bill-input" type="number" />
+        </div>
 
+        <div class="percentages">
+          <label for="tip-percent">Select Tip %</label><br />
+          <div class="button-grid">
+            <button class="percent"></button>
+            <button class="percent"></button>
+            <button class="percent"></button>
+            <button class="percent"></button>
+            <button class="percent"></button>
+          </div>
+        </div>
+
+        <div class="people-input">
+          <label for="people">Number of People</label><br />
+          <input type="number" />
+        </div>
+
+        <div class="display">
+          <label for="tip-amt">Tip Amount</label>
+          <p>/ person</p>
+
+          <label for="total">Total</label>
+          <p>/ person</p>
+          <button>Reset</button>
+        </div>
+      </div>
     </div>
 
-    <div class="people-input">
-      <label for="people">Number of People</label><br>
-      <input type="number">
-    </div>
-
-    <div class="display">
-      <label for="tip-amt">Tip Amount</label>
-      <p>/ person</p>
-
-      <label for="total">Total</label>
-      <p>/ person</p>
-      <button>Reset</button>
-    </div>
-
-  </div>
-
-  <!-- Bill
+    <!-- Bill
 
   Select Tip %
   5%
@@ -71,10 +74,12 @@
   / person
 
   Reset -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
