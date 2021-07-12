@@ -74,13 +74,18 @@ input {
   border-radius: 5px;
   text-align: right;
   padding: 0.25em 1em;
-  margin-bottom: 1em;
+  margin-bottom: 1em; 
+  background-repeat: no-repeat;
+  background-position: 5%;
+}
+
+label {
+    display:inline-block;
+    margin-bottom: .5em;
 }
 
 .bill-input {
   background-image: url(/images/icon-dollar.svg);
-  background-repeat: no-repeat;
-  background-position: 5%;
 }
 
 //removes spin button
@@ -94,5 +99,34 @@ input[type="number"]::-webkit-outer-spin-button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 15px;
+  margin: .5em 0 2em 0;
+
+  .percent-btn {
+    border: none;
+    color: #fff;
+    background-color: $very-dark-cyan;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    padding: 0.25em 0;
+  }
+
+  .default {
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+    font-weight: 700;
+  }
+
+  .custom {
+      background-color: $input-clr;
+      color: $dark-grayish-cyan1;
+      font-weight: 700;
+      
+  }
+}
+
+.people-input {
+    background-image: url(/images/icon-person.svg);
 }

@@ -66,12 +66,17 @@ input {
   text-align: right;
   padding: 0.25em 1em;
   margin-bottom: 1em;
+  background-repeat: no-repeat;
+  background-position: 5%;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5em;
 }
 
 .bill-input {
   background-image: url(/images/icon-dollar.svg);
-  background-repeat: no-repeat;
-  background-position: 5%;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -87,6 +92,34 @@ input[type="number"]::-webkit-outer-spin-button {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 15px;
+  margin: .5em 0 2em 0;
+}
+
+.button-grid .percent-btn {
+  border: none;
+  color: #fff;
+  background-color: #00494d;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 0.25em 0;
+}
+
+.button-grid .default {
+  background-color: #26c0ab;
+  color: #00494d;
+  font-weight: 700;
+}
+
+.button-grid .custom {
+  background-color: #f4fafa;
+  color: #5e7a7d;
+  font-weight: 700;
+}
+
+.people-input {
+  background-image: url(/images/icon-person.svg);
 }
 /*# sourceMappingURL=style.css.map */
