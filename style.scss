@@ -15,9 +15,10 @@ $White: hsl(0, 0%, 100%);
 .attribution {
   font-size: 11px;
   text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
 }
 
 * {
@@ -32,9 +33,9 @@ body {
   width: 100vw;
   font-family: "Space Mono", sans-serif;
 }
+
 .container {
   width: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
@@ -56,13 +57,16 @@ input {
 .logo-section {
   margin: 3em 0;
   text-align: center;
+  //   display: flex;
+  //   justify-content: center;
+  //   margin: 3em 0;
 }
 
 .calculator {
   width: 100%;
   max-width: 500px;
   background-color: white;
-  padding: 2em 0em 0 0em;
+  padding-top: 2em;
   border-radius: 20px 20px 0 0;
 }
 
@@ -73,22 +77,22 @@ input {
   border-radius: 5px;
   text-align: right;
   padding: 0.25em 1em;
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
   background-repeat: no-repeat;
   background-position: 5%;
 }
 
 label {
-    display:inline-block;
-    margin-bottom: .5em;
+  display: inline-block;
+  margin-bottom: 0.5em;
 }
 
 .input-section {
-    padding: 0 2em;
+  padding: 0 2em;
 }
 
 .info-section {
-    padding: 0 1.5em;
+  padding: 0 1.5em;
 }
 
 .bill-input {
@@ -107,7 +111,7 @@ input[type="number"]::-webkit-outer-spin-button {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 15px;
-  margin: .5em 0 2em 0;
+  margin: 0.5em 0 2em 0;
 
   .percent-btn {
     border: none;
@@ -127,47 +131,69 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .custom {
-      background-color: $input-clr;
-      color: $dark-grayish-cyan1;
-      font-weight: 700;
-      
+    background-color: $input-clr;
+    color: $dark-grayish-cyan1;
+    font-weight: 700;
   }
 }
 
 .people-input {
-    background-image: url(/images/icon-person.svg);
+  background-image: url(/images/icon-person.svg);
 }
 
-
 .tip-display {
-    background-color: $very-dark-cyan;
-    border-radius: 20px;
-    margin: 1em 0;
-    padding: 3em 2em 2em 2em;
-    
-    label {
-        color: white;
-        font-size: 1.25rem;
-        margin-bottom: 0;
-    }
+  background-color: $very-dark-cyan;
+  border-radius: 20px;
+  margin: 1em 0;
+  padding: 3em 2em 2em 2em;
 
-    p {
-        color:$dark-grayish-cyan2;
-    }
+  label {
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
 
-    .tip {
-        margin-bottom: 1.5em;
-    }
+  p {
+    color: $dark-grayish-cyan2;
+  }
+
+  .tip {
+    margin-bottom: 1.5em;
+  }
+
+  div:nth-child(2) {
+    margin-bottom: 2em;
+  }
 }
 
 .display-section {
-    display: flex;
-    justify-content: space-between;
-    //align-items: center;
+  display: flex;
+  justify-content: space-between;
 
-    .final-amt {
-        color: $strong-cyan;
-        font-size: 2rem;
-        font-weight: 700;
-    }
+  .final-amt {
+    color: $strong-cyan;
+    font-size: 2rem;
+    font-weight: 700;
+  }
 }
+
+.reset-btn {
+  width: 100%;
+  color: $very-dark-cyan;
+  font-size: 1rem;
+  padding: 1em;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: $strong-cyan;
+}
+
+// @media (min-width: 720px){
+//     .calculator {
+
+//         display: flex;
+//         flex: 1;
+//         max-width: 900px;
+//     }
+// }
