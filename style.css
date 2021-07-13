@@ -69,6 +69,22 @@ input {
   background-position: 5%;
 }
 
+input::-webkit-input-placeholder {
+  color: #00494d;
+}
+
+input:-ms-input-placeholder {
+  color: #00494d;
+}
+
+input::-ms-input-placeholder {
+  color: #00494d;
+}
+
+input::placeholder {
+  color: #00494d;
+}
+
 label {
   display: inline-block;
   margin-bottom: 0.5em;
@@ -76,10 +92,16 @@ label {
 
 .input-section {
   padding: 0 2em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .info-section {
   padding: 0 1.5em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .bill-input {
@@ -122,8 +144,26 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .button-grid .custom {
   background-color: #f4fafa;
-  color: #5e7a7d;
+  color: #00494d;
   font-weight: 700;
+  height: 100%;
+  padding: 0 .5em;
+}
+
+.button-grid .custom::-webkit-input-placeholder {
+  color: #5e7a7d;
+}
+
+.button-grid .custom:-ms-input-placeholder {
+  color: #5e7a7d;
+}
+
+.button-grid .custom::-ms-input-placeholder {
+  color: #5e7a7d;
+}
+
+.button-grid .custom::placeholder {
+  color: #5e7a7d;
 }
 
 .people-input {
@@ -183,7 +223,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 @media (min-width: 755px) {
-  body, html {
+  body,
+  html {
     height: 100vh;
   }
   body {
@@ -216,9 +257,6 @@ input[type="number"]::-webkit-outer-spin-button {
         grid-template-rows: repeat(2, 1fr);
   }
   .info-section {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
     padding: 0;
   }
   .info-section .tip-display {
@@ -237,7 +275,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .reset-btn {
     position: absolute;
-    bottom: 5%;
+    bottom: 7%;
     left: 10%;
     width: 80%;
   }

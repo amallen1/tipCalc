@@ -80,6 +80,10 @@ input {
   margin-bottom: 1em;
   background-repeat: no-repeat;
   background-position: 5%;
+
+  &::placeholder {
+    color: $very-dark-cyan;
+  }
 }
 
 label {
@@ -89,10 +93,12 @@ label {
 
 .input-section {
   padding: 0 2em;
+  flex: 1;
 }
 
 .info-section {
   padding: 0 1.5em;
+  flex: 1;
 }
 
 .bill-input {
@@ -112,6 +118,7 @@ input[type="number"]::-webkit-outer-spin-button {
   grid-template-rows: 1fr 1fr 1fr;
   gap: 15px;
   margin: 0.5em 0 2em 0;
+  
 
   .percent-btn {
     border: none;
@@ -132,8 +139,14 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .custom {
     background-color: $input-clr;
-    color: $dark-grayish-cyan1;
+    color: $very-dark-cyan;
+    &::placeholder {
+      color: $dark-grayish-cyan1;
+    }
     font-weight: 700;
+    height: 100%;
+    padding: 0 .5em;
+    
   }
 }
 
@@ -190,17 +203,17 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 @media (min-width: 755px) {
+  body,
+  html {
+    height: 100vh;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    body , html {
-        height: 100vh;
-    }
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
   .calculator {
     display: flex;
     max-width: 900px;
@@ -214,7 +227,6 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .info-section {
-    flex: 1;
     padding: 0;
 
     .tip-display {
@@ -238,8 +250,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .reset-btn {
     position: absolute;
-    bottom: 5%;
+    bottom: 7%;
     left: 10%;
     width: 80%;
+
   }
 }
