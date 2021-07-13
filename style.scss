@@ -189,11 +189,57 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: $strong-cyan;
 }
 
-// @media (min-width: 720px){
-//     .calculator {
+@media (min-width: 755px) {
 
-//         display: flex;
-//         flex: 1;
-//         max-width: 900px;
-//     }
-// }
+    body , html {
+        height: 100vh;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+  .calculator {
+    display: flex;
+    max-width: 900px;
+    border-radius: 20px;
+    padding: 2em;
+  }
+
+  .button-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+
+  .info-section {
+    flex: 1;
+    padding: 0;
+
+    .tip-display {
+      height: 100%;
+      margin: 0;
+      position: relative;
+    }
+
+    .display-section {
+      margin-bottom: 2em;
+
+      .final-amt {
+        font-size: 3rem;
+      }
+
+      label {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  .reset-btn {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    width: 80%;
+  }
+}

@@ -181,4 +181,65 @@ input[type="number"]::-webkit-outer-spin-button {
   font-weight: 700;
   background-color: #26c0ab;
 }
+
+@media (min-width: 755px) {
+  body, html {
+    height: 100vh;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .calculator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 900px;
+    border-radius: 20px;
+    padding: 2em;
+  }
+  .button-grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .info-section {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0;
+  }
+  .info-section .tip-display {
+    height: 100%;
+    margin: 0;
+    position: relative;
+  }
+  .info-section .display-section {
+    margin-bottom: 2em;
+  }
+  .info-section .display-section .final-amt {
+    font-size: 3rem;
+  }
+  .info-section .display-section label {
+    margin-top: 1em;
+  }
+  .reset-btn {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    width: 80%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
