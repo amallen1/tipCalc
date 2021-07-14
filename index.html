@@ -25,31 +25,33 @@
     <div class="container">
       <div class="calculator">
         <section class="input-section">
+
           <div class="bill-inputs">
             <label for="bill">Bill</label><br />
-            <input id="bill-input" class="main-input" type="number" placeholder="0" />
+            <input id="bill-input-el" class="bill-input" type="number" placeholder="0" onwheel="this.blur()" />
           </div>
 
           <div class="percentages">
             <label for="tip-percent">Select Tip %</label><br />
             <div class="button-grid">
-              <button class="percent-btn">5%</button>
-              <button class="percent-btn">10%</button>
-              <button class="percent-btn default">15%</button>
-              <button class="percent-btn">25%</button>
-              <button class="percent-btn">50%</button>
-              <input class=" custom" type="number" placeholder="Custom">
+              <button id="5" class="percent-btn">5%</button>
+              <button id="10"class="percent-btn">10%</button>
+              <button id="15"class="percent-btn">15%</button>
+              <button id="25"class="percent-btn">25%</button>
+              <button id="50"class="percent-btn">50%</button>
+              <input id="custom-input" class="custom" type="number" placeholder="Custom">
               
             </div>
           </div>
 
           <div class="people-inputs">
             <label for="people">Number of People</label><br />
-            <input id="people-input" class="main-input" type="number" placeholder="0"/>
+            <input id="people-input-el" class="people-input" type="number" placeholder="0" onwheel="this.blur()"/>
           </div>
         </section>
 
         <section class="info-section">
+
           <div class="tip-display">
             <div class="display-section">
               <div class="tip">
@@ -69,7 +71,7 @@
               <p id="total" class="final-amt">$0.00</p>
             </div>
 
-            <button class="reset-btn">Reset</button>
+            <button id="reset" class="reset-btn">Reset</button>
           </div>
         </section>
       </div>
@@ -81,5 +83,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Aniya Allen</a>.
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
