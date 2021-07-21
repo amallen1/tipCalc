@@ -5,7 +5,7 @@ $strong-cyan: #26c0ab;
 
 //neutral colors
 $very-dark-cyan: #00494d;
-$dark-grayish-cyan1: hsl(186, 14%, 43%);
+$dark-grayish-cyan1: #5e7a7d;
 $dark-grayish-cyan2: hsl(184, 14%, 56%);
 $body-background: hsl(185, 41%, 84%);
 $input-clr: hsl(189, 41%, 97%);
@@ -135,7 +135,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .selected-btn {
     background-color: $strong-cyan;
-    color: yellow;
+    color: #fff;
   }
 
   .custom {
@@ -200,6 +200,10 @@ input[type="number"]::-webkit-outer-spin-button {
   text-transform: uppercase;
   font-weight: 700;
   background-color: $strong-cyan;
+}
+
+.unselected-reset {
+  background-color: $dark-grayish-cyan1;
 }
 
 @media (min-width: 755px) {

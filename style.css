@@ -145,7 +145,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .button-grid .selected-btn {
   background-color: #26c0ab;
-  color: yellow;
+  color: #fff;
 }
 
 .button-grid .custom {
@@ -226,6 +226,10 @@ input[type="number"]::-webkit-outer-spin-button {
   text-transform: uppercase;
   font-weight: 700;
   background-color: #26c0ab;
+}
+
+.unselected-reset {
+  background-color: #5e7a7d;
 }
 
 @media (min-width: 755px) {
