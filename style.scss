@@ -4,7 +4,7 @@
 $strong-cyan: #26c0ab;
 
 //neutral colors
-$very-dark-cyan: hsl(183, 100%, 15%);
+$very-dark-cyan: #00494d;
 $dark-grayish-cyan1: hsl(186, 14%, 43%);
 $dark-grayish-cyan2: hsl(184, 14%, 56%);
 $body-background: hsl(185, 41%, 84%);
@@ -133,10 +133,9 @@ input[type="number"]::-webkit-outer-spin-button {
     }
   }
 
-  .default {
+  .selected-btn {
     background-color: $strong-cyan;
-    color: $very-dark-cyan;
-    font-weight: 700;
+    color: yellow;
   }
 
   .custom {
