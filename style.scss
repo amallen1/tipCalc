@@ -80,7 +80,19 @@ input {
   background-position: 5%;
 
   &::placeholder {
-    color: $very-dark-cyan;
+    color: $dark-grayish-cyan2;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $strong-cyan;
+  }
+}
+
+.input-focus {
+  &:focus {
+    outline: none;
+    border: 2px solid red;
   }
 }
 
@@ -150,6 +162,15 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
+.ppl-label {
+  display: flex;
+  justify-content: space-between;
+  &::after {
+    color: red;
+    content: "Cant be zero";
+  }
+}
+
 .people-input {
   background-image: url(/images/icon-person.svg);
 }
@@ -199,15 +220,14 @@ input[type="number"]::-webkit-outer-spin-button {
   border: none;
   text-transform: uppercase;
   font-weight: 700;
-  background-color: $strong-cyan;
-}
-
-.unselected-reset {
   background-color: $dark-grayish-cyan1;
 }
 
+.selected-reset {
+  background-color: $strong-cyan;
+}
+
 @media (min-width: 755px) {
-  
   body {
     display: flex;
     flex-direction: column;

@@ -72,19 +72,29 @@ input {
 }
 
 input::-webkit-input-placeholder {
-  color: #00494d;
+  color: #7f9c9f;
 }
 
 input:-ms-input-placeholder {
-  color: #00494d;
+  color: #7f9c9f;
 }
 
 input::-ms-input-placeholder {
-  color: #00494d;
+  color: #7f9c9f;
 }
 
 input::placeholder {
-  color: #00494d;
+  color: #7f9c9f;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #26c0ab;
+}
+
+.input-focus:focus {
+  outline: none;
+  border: 2px solid red;
 }
 
 label {
@@ -172,6 +182,20 @@ input[type="number"]::-webkit-outer-spin-button {
   color: #5e7a7d;
 }
 
+.ppl-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ppl-label::after {
+  color: red;
+  content: "Cant be zero";
+}
+
 .people-input {
   background-image: url(/images/icon-person.svg);
 }
@@ -225,11 +249,11 @@ input[type="number"]::-webkit-outer-spin-button {
   border: none;
   text-transform: uppercase;
   font-weight: 700;
-  background-color: #26c0ab;
+  background-color: #5e7a7d;
 }
 
-.unselected-reset {
-  background-color: #5e7a7d;
+.selected-reset {
+  background-color: #26c0ab;
 }
 
 @media (min-width: 755px) {

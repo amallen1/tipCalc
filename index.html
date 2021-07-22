@@ -44,8 +44,9 @@
             </div>
           </div>
 
-          <div class="people-inputs">
-            <label for="people">Number of People</label><br />
+          <div class="people-inputs" data-error="Can't be zero">
+            <label id="ppl-label" for="people">Number of People</label>
+            <!-- <div class="error-msg">Can't be zero</div> -->
             <input id="people-input-el" class="people-input" type="number" placeholder="0" onwheel="this.blur()"/>
           </div>
         </section>
