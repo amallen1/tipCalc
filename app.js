@@ -22,6 +22,7 @@ buttons.forEach((button) => {
     buttons.forEach((e) => e.classList.remove("selected-btn"));
     e.target.classList.add("selected-btn");
     percent = parseInt(button.id) / 100;
+    calculate();
 
   });
 });
@@ -66,7 +67,7 @@ resetButtonEl.addEventListener("click", (e) => {
   buttons.forEach((button) => {
     button.classList.remove("selected-btn");
   });
-  
+  percent = 0;
   billInputEl.value = "";
   customTipEl.value = "";
   numPplEl.value = "";

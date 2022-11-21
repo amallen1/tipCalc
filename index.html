@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -14,8 +13,6 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Tip calculator app</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <div class="logo-section">
@@ -25,34 +22,49 @@
     <div class="container">
       <div class="calculator">
         <section class="input-section">
-
           <div class="bill-inputs">
             <label for="bill">Bill</label><br />
-            <input id="bill-input-el" class="bill-input" type="number" placeholder="0" onwheel="this.blur()" />
+            <input
+              id="bill-input-el"
+              class="bill-input"
+              type="number"
+              placeholder="0"
+              onwheel="this.blur()"
+            />
           </div>
 
           <div class="percentages">
             <label for="tip-percent">Select Tip %</label><br />
             <div class="button-grid">
               <button id="5" class="percent-btn">5%</button>
-              <button id="10"class="percent-btn">10%</button>
-              <button id="15"class="percent-btn">15%</button>
-              <button id="25"class="percent-btn">25%</button>
-              <button id="50"class="percent-btn">50%</button>
-              <input id="custom-input" class="custom" type="number" placeholder="Custom">
-              
+              <button id="10" class="percent-btn">10%</button>
+              <button id="15" class="percent-btn">15%</button>
+              <button id="25" class="percent-btn">25%</button>
+              <button id="50" class="percent-btn">50%</button>
+              <input
+                id="custom-input"
+                class="custom"
+                type="number"
+                placeholder="Custom"
+                onwheel="this.blur()"
+              />
             </div>
           </div>
 
           <div class="people-inputs" data-error="Can't be zero">
             <label id="ppl-label" for="people">Number of People</label>
             <!-- <div class="error-msg">Can't be zero</div> -->
-            <input id="people-input-el" class="people-input" type="number" placeholder="0" onwheel="this.blur()"/>
+            <input
+              id="people-input-el"
+              class="people-input"
+              type="number"
+              placeholder="0"
+              onwheel="this.blur()"
+            />
           </div>
         </section>
 
         <section class="info-section">
-
           <div class="tip-display">
             <div class="display-section">
               <div class="tip">
@@ -78,13 +90,13 @@
       </div>
     </div>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Aniya Allen</a>.
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </footer>
+
     <script src="app.js"></script>
   </body>
 </html>

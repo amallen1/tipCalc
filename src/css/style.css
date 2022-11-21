@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c5e4e7;
+  height: 100vh;
+  font-family: "Space Mono", sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  color: #5e7a7d;
+  font-weight: 700;
+}
+
+input {
+  font-size: 24px;
+  font-family: inherit;
+  color: #00494d;
+  font-weight: 700;
+}
+
+.logo-section {
+  margin: 3em 0;
+  text-align: center;
+}
+
+.calculator {
+  max-width: 500px;
+  background-color: white;
+  padding-top: 2em;
+  border-radius: 20px 20px 0 0;
+}
+.calculator button {
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  border: none;
+  background-color: #f4fafa;
+  border-radius: 5px;
+  text-align: right;
+  padding: 0.25em 1em;
+  margin-bottom: 1em;
+  background-repeat: no-repeat;
+  background-position: 5%;
+}
+input::placeholder {
+  color: #7f9c9f;
+}
+input:focus {
+  outline: none;
+  border: 2px solid #26c0ab;
+}
+
+.input-focus:focus {
+  outline: none;
+  border: 2px solid red;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+.input-section {
+  padding: 0 2em;
+  flex: 1;
+}
+
+.info-section {
+  padding: 0 1.5em;
+  flex: 1;
+}
+
+.bill-input {
+  background-image: url(/images/icon-dollar.svg);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+  margin: 0.5em 0 2em 0;
+}
+.button-grid .percent-btn {
+  border: none;
+  color: #fff;
+  background-color: #00494d;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+.button-grid .percent-btn:hover {
+  background-color: #c5e4e7;
+  color: #00494d;
+}
+.button-grid .selected-btn {
+  background-color: #26c0ab;
+  color: #fff;
+}
+.button-grid .custom {
+  background-color: #f4fafa;
+  color: #00494d;
+  font-weight: 700;
+  height: 100%;
+  padding: 0 0.5em;
+}
+.button-grid .custom::placeholder {
+  color: #5e7a7d;
+}
+
+.ppl-label {
+  display: flex;
+  justify-content: space-between;
+}
+.ppl-label::after {
+  color: red;
+  content: "Cant be zero";
+}
+
+.people-input {
+  background-image: url(/images/icon-person.svg);
+}
+
+.tip-display {
+  background-color: #00494d;
+  border-radius: 20px;
+  margin: 1em 0;
+  padding: 3em 2em 2em 2em;
+}
+.tip-display label {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+.tip-display p {
+  color: #7f9c9f;
+}
+.tip-display .tip {
+  margin-bottom: 1.5em;
+}
+.tip-display div:nth-child(2) {
+  margin-bottom: 2em;
+}
+
+.display-section {
+  display: flex;
+  justify-content: space-between;
+}
+.display-section .final-amt {
+  color: #26c0ab;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.reset-btn {
+  width: 100%;
+  color: #00494d;
+  font-size: 1rem;
+  padding: 1em;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #5e7a7d;
+}
+
+.selected-reset {
+  background-color: #26c0ab;
+}
+
+@media (min-width: 755px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .calculator {
+    display: flex;
+    max-width: 900px;
+    border-radius: 20px;
+    padding: 2em;
+  }
+
+  .button-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .info-section {
+    padding: 0;
+  }
+  .info-section .tip-display {
+    height: 100%;
+    margin: 0;
+    position: relative;
+  }
+  .info-section .display-section {
+    margin-bottom: 2em;
+  }
+  .info-section .display-section .final-amt {
+    font-size: 3rem;
+  }
+  .info-section .display-section label {
+    margin-top: 1em;
+  }
+
+  .reset-btn {
+    position: absolute;
+    bottom: 7%;
+    left: 10%;
+    width: 80%;
+  }
+}
